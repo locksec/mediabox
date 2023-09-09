@@ -39,26 +39,33 @@ Add the CSS in the `<head>` section of your HTML.
 **Note**: However, as a cybersecurity professional I personally take caution here. The external nature of a CDN means that you're relying on another platform to serve your files. If this platform, or even your own repository, gets compromised, malicious code could be distributed. This is true of any JavaScript library, not just this one. 
 
 ## 🏗️ HTML
-Create an HTML element, apply the `.mediabox-link` class, and include a `data-src` attribute pointing to your desired media:
+Create an HTML element, apply the `.mediabox-link` class, and include a `data-url` attribute pointing to your desired media, such as YouTube.
+
+**Note**: Make sure to use YouTube's embed URL, which starts with `https://www.youtube.com/embed/`
 
 ``` html
-<div class="mediabox-link" data-src="image.jpg">
-  <img src="thumbnail.jpg">
-</div>
+        <div class="mediabox-link" data-url="https://www.youtube.com/embed/wTblbYqQQag?autoplay=1">
+            <img src="demo-content/image.jpg" alt="Your Video Image" />
+        </div>
 ```
 
-Feel free to use the included demo page (index.html) for quick tests.
-
-## 🎬 Adding a Play Button
+### 🎬 Adding a Play Button
 To overlay a play button, use the play-button-wrapper container. Add it after the image, as shown:
 
 ```html
-<div class="mediabox-link" data-width="1000" data-url="https://www.youtube.com/embed/wTblbYqQQag?autoplay=1">
-  <img src="jim.jpg" alt="Your Video Image" />
-  <div class="play-button-wrapper">
-    <div class="play-button"></div>
-  </div>
-</div>
+        <div class="mediabox-link" data-url="https://www.youtube.com/embed/wTblbYqQQag?autoplay=1">
+            <img src="demo-content/image.jpg" alt="Your Video Image" />
+        <div class="play-button-wrapper">
+          <div class="play-button"></div>
+        </div>
+      </div>
+```
+
+### Using MediaBox on text links
+To use it on a text link, you just need to use `class="mediabox-link"`.
+
+``` html
+      <a href="demo-content/mario.jpg" class="mediabox-link">You can also use a text link to an image</a>
 ```
 
 ## 🤔 Why Choose Between `mediabox.js` and `mediabox.min.js`?
