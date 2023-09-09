@@ -11,6 +11,10 @@ by @[rayheffer](https://www.rayheffer.com)
 * Automatically detects screen size, and scales the size of the media, which is ideal for mobile devices
 * Complete with full CSS styling for an enhanced user experience
 
+## Demo
+
+[Try it out for yourself!](https://rayheffer.github.io/mediabox/)
+
 ## 🚀 Quick Start
 
 ### 1. Hosting JavaScript and CSS yourself
