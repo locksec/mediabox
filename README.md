@@ -38,7 +38,7 @@ Add the CSS in the `<head>` section of your HTML.
 
 **Note**: However, as a cybersecurity professional I personally take caution here. The external nature of a CDN means that you're relying on another platform to serve your files. If this platform, or even your own repository, gets compromised, malicious code could be distributed. This is true of any JavaScript library, not just this one. 
 
-### 3. HTML
+## Usage
 Create an HTML element, apply the `.mediabox-link` class, and include a `data-url` attribute pointing to your desired media, such as YouTube.
 
 **Note**: Make sure to use YouTube's embed URL, which starts with `https://www.youtube.com/embed/`
@@ -49,7 +49,7 @@ Create an HTML element, apply the `.mediabox-link` class, and include a `data-ur
   </div>
 ```
 
-#### 🎬 Adding a Play Button (optional)
+### 🎬 Adding a Play Button (optional)
 To overlay a play button, use the play-button-wrapper container. Add it after the image, as shown:
 
 ```html
@@ -61,7 +61,7 @@ To overlay a play button, use the play-button-wrapper container. Add it after th
 </div>
 ```
 
-#### Using MediaBox on text links
+### Using MediaBox on text links
 To use it on a text link, you just need to use `class="mediabox-link"`.
 
 ``` html
