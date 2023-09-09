@@ -4,7 +4,7 @@ MediaBox is a minimalist yet potent JavaScript library that elevates media displ
 
 ## 🚀 Quick Start
 
-### Hosting JavaScript and CSS yourself
+### 1. Hosting JavaScript and CSS yourself
 To integrate MediaBox into your project, download the `mediabox-min.js` file and include it at the bottom of your HTML file, just before the `</body>` tag.
 
 ``` html
@@ -19,7 +19,7 @@ Do the same for `mediabox.min.css`, downloading it and including it in the `<hea
     <link rel="stylesheet" href="mediabox.css" type="text/css">
 ```
 
-### Using a CDN (recommended for most) for the JavaScript and CSS
+### 2. Using a CDN (recommended for most) for the JavaScript and CSS
 Instead of downloading and hosting the JavaScript and CSS yourself, you can simply use the CDN (Content Delivery Network) links. CDNs provide a great way to speed up your web project and offer a better user experience. CDNs provide fast, distributed access to static resources by serving them from the nearest location to each user.
 
 Add the MediaBox JavaScript at the bottom of your HTML, just before the `</body>` tag.
