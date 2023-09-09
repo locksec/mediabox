@@ -8,15 +8,15 @@ MediaBox is a minimalist yet potent JavaScript library that elevates media displ
 To integrate MediaBox into your project, download the `mediabox-min.js` file and include it at the bottom of your HTML file, just before the `</body>` tag.
 
 ``` html
-    <!-- MediaBox JS -->
-    <script src="path/to/mediabox-min.js"></script>
+<!-- MediaBox JS -->
+<script src="path/to/mediabox-min.js"></script>
 ```
 
 Do the same for `mediabox-min.css`, downloading it and including it in the `<head>` section of your page.
 
 ``` html
-    <!-- MediaBox CSS -->
-    <link rel="stylesheet" href="mediabox-min.css" type="text/css">
+<!-- MediaBox CSS -->
+<link rel="stylesheet" href="mediabox-min.css" type="text/css">
 ```
 
 ### 2. Using a CDN (recommended for most) for the JavaScript and CSS
@@ -24,15 +24,15 @@ Instead of downloading and hosting the JavaScript and CSS yourself, you can simp
 
 Add the MediaBox JavaScript at the bottom of your HTML, just before the `</body>` tag.
 ``` html
-    <!-- MediaBox JS -->
-    <script src="https://cdn.jsdelivr.net/gh/rayheffer/mediabox@main/mediabox-min.js"></script>
+<!-- MediaBox JS -->
+<script src="https://cdn.jsdelivr.net/gh/rayheffer/mediabox@main/mediabox-min.js"></script>
 ```
 
 Add the CSS in the `<head>` section of your HTML.
 
 ``` html
-    <!-- MediaBox CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rayheffer/mediabox@main/mediabox-min.css" type="text/css">
+<!-- MediaBox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rayheffer/mediabox@main/mediabox-min.css" type="text/css">
 ```
 
 
@@ -44,28 +44,28 @@ Create an HTML element, apply the `.mediabox-link` class, and include a `data-ur
 **Note**: Make sure to use YouTube's embed URL, which starts with `https://www.youtube.com/embed/`
 
 ``` html
-        <div class="mediabox-link" data-url="https://www.youtube.com/embed/wTblbYqQQag?autoplay=1">
-            <img src="demo-content/image.jpg" alt="Your Video Image" />
-        </div>
+  <div class="mediabox-link" data-url="https://www.youtube.com/embed/wTblbYqQQag?autoplay=1">
+      <img src="demo-content/image.jpg" alt="Your Video Image" />
+  </div>
 ```
 
 #### 🎬 Adding a Play Button (optional)
 To overlay a play button, use the play-button-wrapper container. Add it after the image, as shown:
 
 ```html
-        <div class="mediabox-link" data-url="https://www.youtube.com/embed/wTblbYqQQag?autoplay=1">
-            <img src="demo-content/image.jpg" alt="Your Video Image" />
-        <div class="play-button-wrapper">
-          <div class="play-button"></div>
-        </div>
-      </div>
+  <div class="mediabox-link" data-url="https://www.youtube.com/embed/wTblbYqQQag?autoplay=1">
+      <img src="demo-content/image.jpg" alt="Your Video Image" />
+  <div class="play-button-wrapper">
+    <div class="play-button"></div>
+  </div>
+</div>
 ```
 
 #### Using MediaBox on text links
 To use it on a text link, you just need to use `class="mediabox-link"`.
 
 ``` html
-      <a href="demo-content/mario.jpg" class="mediabox-link">You can also use a text link to an image</a>
+<a href="demo-content/mario.jpg" class="mediabox-link">You can also use a text link to an image</a>
 ```
 
 ## 🤔 Why Choose Between `mediabox.js` and `mediabox.min.js`?
