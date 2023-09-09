@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaBox 1.0</title>
+
+    <!-- Icon Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- MediaBox CSS -->
+    <link rel="stylesheet" href="mediabox-min.css" type="text/css">
+    
+    <style>
+        /* Background settings for the body */
+        body {
+            background-color: #1c1824;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center center;
+            font-family: Tahoma, sans-serif; 
+            font-size: 1.2em; 
+            color: #FFFFFF; 
+        
+        /* Header style */
+        .header {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-wrapper {
+            background-color: rgba(255, 255, 255, 0.233);
+            margin: 0 auto; /* Centers the content horizontally */
+            max-width: 1200px; /* You can set this to whatever max width you prefer */
+            border-radius: 12px; /* Rounded corners */
+            padding: 20px; /* 20px padding on all sides */
+            margin-bottom: 20px; /* Adds space below each wrapper */
+        }
+
+        .content-description {
+            padding-bottom: 20px;
+        }
+
+         /* Adds 20px space below the div and styles the text inside */
+        .link-wrapper {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Normal and visited link state: Keep color white */
+        .mediabox-link {
+            color: #FFFFFF;  /* Font color */
+            text-decoration: none;  /* Remove underline */
+        }
+
+        .mediabox-link:visited {
+            color: #FFFFFF;  /* Keeps the color white even after the link has been visited */
+        }
+
+        /* Hover styling */
+        .mediabox-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Image size settings inside .mediabox-link */
+        .mediabox-link img {
+            max-width: 80%;  /* Max width is 80% of parent */
+            max-height: 80%;  /* Max height is 80% of parent */
+            border-radius: 8px;  /* This line rounds the corners */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>MediaBox Demo</h1>
+    </div>
+
+    <!-- YouTube Videos -->
+    <div class="content-wrapper">
+        <div class="content-description">Check out this amazing YouTube video:</div>
+        <div class="mediabox-link" data-width="1000" data-url="https://www.youtube.com/embed/wTblbYqQQag?autoplay=1">
+            <img src="demo-content/jim.jpg" alt="Your Video Image" />
+            <div class="play-button-wrapper">
+                <div class="play-button"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Opening Links -->
+    <div class="content-wrapper">
+        <div class="link-wrapper">
+            <a href="demo-content/mario.jpg" class="mediabox-link" data-width="600" data-height="600">You can also use a text link to an image</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="mediabox-min.js"></script>
+</body>
+</html>

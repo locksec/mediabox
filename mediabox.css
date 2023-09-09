@@ -1,0 +1,238 @@
+/* Global setting for .mediabox-link, applying to both anchor and non-anchor elements */
+.mediabox-link {
+    cursor: pointer; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+/* Hover effect for .mediabox-link */
+.mediabox-link:hover {
+    text-decoration: underline;
+    transform: scale(1.03); 
+}
+
+/* Layout and position for both mediabox and its overlay */
+.mediabox,
+.mediabox .mbox-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for main mediabox container */
+.mediabox {
+    z-index: 999;
+    display: none;
+    opacity: 0;
+    transition: opacity .2s linear, backdrop-filter .2s linear; 
+    backdrop-filter: blur(10px) brightness(0.35);
+}
+
+/* Image size settings inside .mediabox-link */
+.mediabox-link img {
+    border-radius: 8px;
+}
+
+
+/* Positioning for overlay and content within mediabox */
+.mediabox .mbox-overlay,
+.mediabox .mbox-content {
+    position: absolute;
+}
+
+/* Overlay styling */
+.mediabox .mbox-overlay {
+    z-index: 1;
+    background: #000;
+    opacity: 0.1;
+}
+
+/* Change mouse pointer */
+.mediabox .mbox-overlay.mbox-clickable {
+    cursor: pointer;
+}
+
+/* Hide content initially */
+.mediabox .mbox-content {
+    display: none;
+}
+
+/* Display and animate content when loaded */
+.mediabox .mbox-content.mbox-loaded {
+    display: block;
+    animation: scale-in 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Positioning and size of content */
+.mediabox .mbox-content {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1024px;
+    height: 580px;
+    z-index: 2;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Styling for body and iframe within content */
+.mediabox .mbox-body,
+.mediabox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Remove border from iframe */
+.mediabox iframe {
+    border: 0;
+    display: block;
+}
+
+/* Display mediabox when it should be visible */
+.mediabox.mbox-show {
+    display: block;
+}
+
+/* Change opacity when mediabox is open */
+.mediabox.mbox-open {
+    opacity: 1;
+}
+
+/** Loading Spinner **/
+.mediabox .mbox-spinner {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: calc( 50% - 50px);
+    top: calc( 50% - 50px);
+    z-index: 1;
+    display: none;
+}
+
+/* Show spinner and apply scaling animation when the mbox-show class is added */
+.mediabox .mbox-spinner.mbox-show {
+    display: inline-block;
+    animation: scale-in 0.15s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
+}
+
+/* Spinner styling - Creates the circular loading spinner */
+.mediabox .mbox-spinner:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: mediabox-spinner 1.2s linear infinite;
+}
+
+/* Keyframe animation for spinner rotation */
+@keyframes mediabox-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Basic styles for close button, set to not display by default */
+.mediabox .mbox-close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+    font-size: 70px;
+    color: #fff;
+    line-height: 46px;
+    margin-top: -7px;
+}
+
+/* Add scaling animation when the mbox-show class is present */
+.mediabox .mbox-close.mbox-show {
+    animation: scale-in-btn 0.15s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
+}
+
+/* Display the close button when the mbox-open class is added */
+.mediabox .mbox-close.mbox-open {
+    display: block;
+}
+
+/** Animations **/
+
+/* Keyframe animation for generic scaling */
+@keyframes scale-in {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Keyframe animation for close button scaling */
+@keyframes scale-in-btn {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Play Button Wrapper */
+.play-button-wrapper {
+    position: absolute;  /* Relative to .mediabox-link */
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);  /* Semi-transparent white */
+    border-radius: 50%;  /* Circular shape */
+}
+
+/* The actual play button (triangle shape) */
+.play-button {
+    position: absolute;  /* Relative to .play-button-wrapper */
+    left: 50%;  /* Centering horizontally */
+    top: 50%;  /* Centering vertically */
+    width: 26px;  /* Adjusted size */
+    height: 26px;  /* Adjusted size */
+    background-color: rgba(0, 0, 0, 0.2);  /* Semi-transparent gray */
+    clip-path: polygon(100% 50%, 5% 0%, 5% 100%);  /* Triangle shape */
+    transform: translate(-50%, -50%);  /* Center the button */
+    animation: pulse 1.5s infinite;  /* Pulse effect */
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2); 
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.7;
+    }
+}
