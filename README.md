@@ -2,6 +2,15 @@
 ## Overview
 MediaBox is a minimalist yet potent JavaScript library that elevates media display experience. It's perfect for developers who need a light yet powerful media display tool. It supports a wide array of media types including images, videos, and iframes.
 
+by @[rayheffer](https://www.rayheffer.com)
+
+### Features
+* Hover over image effect
+* Video play button
+* Opens media (E.g. YouTube video) in an overlay, blurring the background
+* Automatically detects screen size, and scales the size of the media, which is ideal for mobile devices
+* Complete with full CSS styling for an enhanced user experience
+
 ## 🚀 Quick Start
 
 ### 1. Hosting JavaScript and CSS yourself
@@ -79,7 +88,7 @@ For production, I recommend the minified version. It's stripped off any superflu
 ## 🎨 Custom Styling
 For custom styles, your options are twofold:
 
-1. Tweak the mediabox.css file directly.
-2. Create your own stylesheet and go wild.
+1. Tweak the `mediabox.css` file directly.
+2. Create your own stylesheet and go wild!
 
 **Note**: The inline <style> section in index.html serves as a demo styling guide and isn't required for MediaBox's core functionality.
