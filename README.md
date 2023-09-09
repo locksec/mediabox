@@ -9,14 +9,14 @@ To integrate MediaBox into your project, download the `mediabox-min.js` file and
 
 ``` html
     <!-- MediaBox JS -->
-    <script src="path/to/mediabox.min.js"></script>
+    <script src="path/to/mediabox-min.js"></script>
 ```
 
-Do the same for `mediabox.min.css`, downloading it and including it in the `<head>` section of your page.
+Do the same for `mediabox-min.css`, downloading it and including it in the `<head>` section of your page.
 
 ``` html
     <!-- MediaBox CSS -->
-    <link rel="stylesheet" href="mediabox.css" type="text/css">
+    <link rel="stylesheet" href="mediabox-min.css" type="text/css">
 ```
 
 ### 2. Using a CDN (recommended for most) for the JavaScript and CSS
