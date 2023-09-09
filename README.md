@@ -58,7 +58,7 @@ Create an HTML element, apply the `.mediabox-link` class, and include a `data-ur
   </div>
 ```
 
-### 🎬 Adding a Play Button (optional)
+### Adding a Play Button (optional)
 To overlay a play button, use the play-button-wrapper container. Add it after the image, as shown:
 
 ```html
