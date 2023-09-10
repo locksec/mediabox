@@ -11,7 +11,7 @@ by @[rayheffer](https://www.rayheffer.com)
 * Automatically detects screen size, and scales the size of the media, which is ideal for mobile devices
 * Complete with full CSS styling for an enhanced user experience
 
-### Screeshots
+### Screenshots
 <a href="screenshot01.jpg"><img src="screenshot01.jpg" width="300"></a>
 
 <a href="screenshot02.jpg"><img src="screenshot02.jpg" width="300"></a>
