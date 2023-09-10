@@ -11,6 +11,13 @@ by @[rayheffer](https://www.rayheffer.com)
 * Automatically detects screen size, and scales the size of the media, which is ideal for mobile devices
 * Complete with full CSS styling for an enhanced user experience
 
+### Screeshots
+[![Screenshot 1](screenshot01.jpg)](screenshot01.jpg)
+
+[![Screenshot 2](screenshot02.jpg)](screenshot02.jpg)
+
+[![Screenshot 3](screenshot03.jpg)](screenshot03.jpg)
+
 ## Demo
 
 [Try it out for yourself!](https://rayheffer.github.io/mediabox/)
