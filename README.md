@@ -12,11 +12,12 @@ by @[rayheffer](https://www.rayheffer.com)
 * Complete with full CSS styling for an enhanced user experience
 
 ### Screeshots
-[![Screenshot 1](screenshot01.jpg)](screenshot01.jpg)
+<a href="screenshot01.jpg"><img src="screenshot01.jpg" width="300"></a>
 
-[![Screenshot 2](screenshot02.jpg)](screenshot02.jpg)
+<a href="screenshot02.jpg"><img src="screenshot02.jpg" width="300"></a>
 
-[![Screenshot 3](screenshot03.jpg)](screenshot03.jpg)
+<a href="screenshot03.jpg"><img src="screenshot03.jpg" width="300"></a>
+
 
 ## Demo
 
