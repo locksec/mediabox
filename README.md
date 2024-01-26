@@ -2,8 +2,6 @@
 ## Overview
 MediaBox is a minimalist yet potent JavaScript library that elevates media display experience. It's perfect for developers who need a light yet powerful media display tool. It supports a wide array of media types including images, videos, and iframes.
 
-by @[rayheffer](https://www.rayheffer.com)
-
 ### Features
 * Hover over image effect
 * Video play button
